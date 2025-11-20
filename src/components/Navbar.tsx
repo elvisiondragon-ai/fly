@@ -1,10 +1,31 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { Button } from "./ui/button";
 import { Menu, Search } from "lucide-react";
 import { useState } from "react";
+import { useAuth } from "../contexts/AuthContext";
+import { supabase } from "../lib/supabaseClient";
 
 export const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { session } = useAuth();
+  const navigate = useNavigate();
+
+  const handleLogout = async () => {
+    console.log('handleLogout called');
+    try {
+      const { error } = await supabase.auth.signOut();
+      if (error) {
+        console.error('Error signing out:', error);
+      } else {
+        console.log('Successfully signed out');
+      }
+    } catch (e) {
+      console.error('Exception during sign out:', e);
+    } finally {
+      console.log('Navigating to /auth');
+      navigate('/auth');
+    }
+  };
 
   return (
     <nav className="sticky top-0 z-50 bg-background border-b border-border">
@@ -37,12 +58,20 @@ export const Navbar = () => {
             <Button variant="ghost" size="icon">
               <Search className="h-5 w-5" />
             </Button>
-            <Link to="/login">
-              <Button variant="outline">Masuk</Button>
-            </Link>
-            <Link to="/join">
-              <Button>Gabung Sekarang</Button>
-            </Link>
+            {session ? (
+              <>
+                <Link to="/account">
+                  <Button variant="outline">Profile</Button>
+                </Link>
+                <Button onClick={handleLogout}>Logout</Button>
+              </>
+            ) : (
+              <>
+                <Link to="/auth">
+                  <Button variant="outline">Masuk</Button>
+                </Link>
+              </>
+            )}
           </div>
 
           {/* Mobile Menu Button */}
@@ -74,12 +103,20 @@ export const Navbar = () => {
                 Kontak
               </Link>
               <div className="flex gap-2 pt-2">
-                <Link to="/login" className="flex-1">
-                  <Button variant="outline" className="w-full">Masuk</Button>
-                </Link>
-                <Link to="/join" className="flex-1">
-                  <Button className="w-full">Gabung Sekarang</Button>
-                </Link>
+                {session ? (
+                  <>
+                    <Link to="/account" className="flex-1">
+                      <Button variant="outline" className="w-full">Profile</Button>
+                    </Link>
+                    <Button onClick={handleLogout} className="flex-1">Logout</Button>
+                  </>
+                ) : (
+                  <>
+                    <Link to="/auth" className="flex-1">
+                      <Button variant="outline" className="w-full">Masuk</Button>
+                    </Link>
+                  </>
+                )}
               </div>
             </div>
           </div>

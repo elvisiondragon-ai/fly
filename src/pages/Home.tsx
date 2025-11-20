@@ -69,12 +69,6 @@ const Home = () => {
           <p className="text-xl md:text-2xl mb-8 max-w-2xl mx-auto">
             Menghubungkan keunggulan dan inovasi global melintasi batas
           </p>
-          <Link to="/join">
-            <Button size="lg" variant="secondary" className="group">
-              Menjadi Anggota
-              <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-            </Button>
-          </Link>
         </div>
       </section>
 
