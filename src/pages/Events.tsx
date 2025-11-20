@@ -6,49 +6,49 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 const Events = () => {
   const upcomingEvents = [
     {
-      title: "Regional Workshop Series",
-      date: "April 15-17, 2024",
-      location: "Virtual Event",
-      description: "Three-day intensive workshop covering best practices and innovations in the field.",
+      title: "Seri Lokakarya Regional",
+      date: "15-17 April 2024",
+      location: "Acara Virtual",
+      description: "Lokakarya intensif tiga hari yang mencakup praktik terbaik dan inovasi di bidangnya.",
     },
     {
-      title: "Annual General Meeting",
-      date: "May 20, 2024",
-      location: "Geneva, Switzerland",
-      description: "Join members from around the world for our yearly gathering and strategic planning session.",
+      title: "Rapat Umum Tahunan",
+      date: "20 Mei 2024",
+      location: "Jenewa, Swiss",
+      description: "Bergabunglah dengan anggota dari seluruh dunia untuk pertemuan tahunan dan sesi perencanaan strategis kami.",
     },
     {
-      title: "Summer Youth Camp",
-      date: "July 1-14, 2024",
-      location: "Barcelona, Spain",
-      description: "Two-week intensive program for young members to develop skills and network.",
+      title: "Kamp Pemuda Musim Panas",
+      date: "1-14 Juli 2024",
+      location: "Barcelona, Spanyol",
+      description: "Program intensif dua minggu bagi anggota muda untuk mengembangkan keterampilan dan jaringan.",
     },
     {
-      title: "Technical Conference",
-      date: "September 10-12, 2024",
-      location: "Singapore",
-      description: "Explore the latest advancements and connect with industry leaders.",
+      title: "Konferensi Teknis",
+      date: "10-12 September 2024",
+      location: "Singapura",
+      description: "Jelajahi kemajuan terbaru dan terhubung dengan para pemimpin industri.",
     },
   ];
 
   const pastEvents = [
     {
-      title: "Winter Symposium 2024",
-      date: "January 15-17, 2024",
-      location: "New York, USA",
-      description: "A successful gathering of over 500 members discussing future strategies.",
+      title: "Simposium Musim Dingin 2024",
+      date: "15-17 Januari 2024",
+      location: "New York, AS",
+      description: "Pertemuan sukses lebih dari 500 anggota yang membahas strategi masa depan.",
     },
     {
-      title: "Regional Training Day",
-      date: "December 5, 2023",
-      location: "London, UK",
-      description: "Hands-on training sessions attended by members from across Europe.",
+      title: "Hari Pelatihan Regional",
+      date: "5 Desember 2023",
+      location: "London, Inggris",
+      description: "Sesi pelatihan langsung yang dihadiri oleh anggota dari seluruh Eropa.",
     },
     {
-      title: "Annual Awards Ceremony",
-      date: "November 20, 2023",
-      location: "Tokyo, Japan",
-      description: "Celebrating excellence and innovation among our global membership.",
+      title: "Upacara Penghargaan Tahunan",
+      date: "20 November 2023",
+      location: "Tokyo, Jepang",
+      description: "Merayakan keunggulan dan inovasi di antara keanggotaan global kami.",
     },
   ];
 
@@ -57,15 +57,15 @@ const Events = () => {
       <Navbar />
 
       <div className="container mx-auto px-4 py-12">
-        <h1 className="text-4xl font-bold mb-4">Events Calendar</h1>
+        <h1 className="text-4xl font-bold mb-4">Kalender Acara</h1>
         <p className="text-muted-foreground mb-8 text-lg">
-          Join us at upcoming events or explore highlights from past gatherings
+          Bergabunglah dengan kami di acara mendatang atau jelajahi sorotan dari acara sebelumnya
         </p>
 
         <Tabs defaultValue="upcoming" className="w-full">
           <TabsList className="mb-8">
-            <TabsTrigger value="upcoming">Upcoming Events</TabsTrigger>
-            <TabsTrigger value="past">Past Events</TabsTrigger>
+            <TabsTrigger value="upcoming">Acara Mendatang</TabsTrigger>
+            <TabsTrigger value="past">Acara Lampau</TabsTrigger>
           </TabsList>
 
           <TabsContent value="upcoming">

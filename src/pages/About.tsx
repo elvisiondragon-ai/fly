@@ -7,45 +7,45 @@ const About = () => {
   const values = [
     {
       icon: Globe,
-      title: "Global Reach",
-      description: "Connecting members from over 100 countries worldwide",
+      title: "Jangkauan Global",
+      description: "Menghubungkan anggota dari lebih 100 negara di seluruh dunia",
     },
     {
       icon: Users,
-      title: "Community First",
-      description: "Building lasting relationships and collaborative networks",
+      title: "Komunitas Utama",
+      description: "Membangun hubungan jangka panjang dan jaringan kolaboratif",
     },
     {
       icon: Award,
-      title: "Excellence",
-      description: "Promoting the highest standards in everything we do",
+      title: "Keunggulan",
+      description: "Mempromosikan standar tertinggi dalam segala hal yang kami lakukan",
     },
     {
       icon: Target,
-      title: "Innovation",
-      description: "Driving progress through creative thinking and bold ideas",
+      title: "Inovasi",
+      description: "Mendorong kemajuan melalui pemikiran kreatif dan ide-ide berani",
     },
   ];
 
   const leadership = [
     {
       name: "Dr. Sarah Johnson",
-      role: "President",
+      role: "Presiden",
       image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330",
     },
     {
       name: "Michael Chen",
-      role: "Vice President",
+      role: "Wakil Presiden",
       image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d",
     },
     {
       name: "Elena Rodriguez",
-      role: "Secretary General",
+      role: "Sekretaris Jenderal",
       image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80",
     },
     {
       name: "James Williams",
-      role: "Treasurer",
+      role: "Bendahara",
       image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e",
     },
   ];
@@ -63,9 +63,9 @@ const About = () => {
           className="absolute inset-0 w-full h-full object-cover mix-blend-overlay"
         />
         <div className="relative z-10 text-center text-white container mx-auto px-4">
-          <h1 className="text-5xl font-bold mb-4">About FLY.ORG</h1>
+          <h1 className="text-5xl font-bold mb-4">Tentang FLY.ORG</h1>
           <p className="text-xl max-w-2xl mx-auto">
-            Empowering global excellence since 1995
+            Memberdayakan keunggulan global sejak 1995
           </p>
         </div>
       </section>
@@ -73,9 +73,9 @@ const About = () => {
       {/* Mission Section */}
       <section className="container mx-auto px-4 py-16">
         <div className="max-w-3xl mx-auto text-center mb-16">
-          <h2 className="text-3xl font-bold mb-6">Our Mission</h2>
+          <h2 className="text-3xl font-bold mb-6">Misi Kami</h2>
           <p className="text-lg text-muted-foreground">
-            FLY.ORG is dedicated to fostering international collaboration and excellence across diverse fields. We bring together professionals, innovators, and enthusiasts from around the world to share knowledge, celebrate achievements, and drive positive change in their communities.
+            FLY.ORG berdedikasi untuk mendorong kolaborasi dan keunggulan internasional di berbagai bidang. Kami menyatukan para profesional, inovator, dan peminat dari seluruh dunia untuk berbagi pengetahuan, merayakan pencapaian, dan mendorong perubahan positif di komunitas mereka.
           </p>
         </div>
 
@@ -97,16 +97,16 @@ const About = () => {
       <section className="bg-secondary py-16">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-3xl font-bold mb-6">Our History</h2>
+            <h2 className="text-3xl font-bold mb-6">Sejarah Kami</h2>
             <div className="space-y-4 text-muted-foreground">
               <p>
-                Founded in 1995, FLY.ORG began as a small group of passionate individuals committed to international collaboration. Over the past three decades, we have grown into a thriving global community with thousands of members across six continents.
+                Didirikan pada tahun 1995, FLY.ORG berawal dari sekelompok kecil individu yang bersemangat dan berkomitmen pada kolaborasi internasional. Selama tiga dekade terakhir, kami telah berkembang menjadi komunitas global yang maju dengan ribuan anggota di enam benua.
               </p>
               <p>
-                Our journey has been marked by numerous milestones, from establishing regional chapters to launching our annual international competitions. Each year, we continue to expand our reach and deepen our impact, staying true to our founding principles while embracing new opportunities for growth.
+                Perjalanan kami ditandai oleh berbagai pencapaian, mulai dari mendirikan cabang regional hingga meluncurkan kompetisi internasional tahunan kami. Setiap tahun, kami terus memperluas jangkauan dan memperdalam dampak kami, tetap setia pada prinsip-prinsip pendirian kami sambil merangkul peluang baru untuk bertumbuh.
               </p>
               <p>
-                Today, FLY.ORG stands as a testament to the power of global cooperation and shared vision. We remain committed to our mission of fostering excellence, innovation, and meaningful connections among our diverse membership.
+                Saat ini, FLY.ORG berdiri sebagai bukti kekuatan kerja sama global dan visi bersama. Kami tetap berkomitmen pada misi kami untuk mendorong keunggulan, inovasi, dan hubungan yang bermakna di antara keanggotaan kami yang beragam.
               </p>
             </div>
           </div>
@@ -115,7 +115,7 @@ const About = () => {
 
       {/* Leadership Section */}
       <section className="container mx-auto px-4 py-16">
-        <h2 className="text-3xl font-bold mb-8 text-center">Leadership Team</h2>
+        <h2 className="text-3xl font-bold mb-8 text-center">Tim Kepemimpinan</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {leadership.map((leader, idx) => (
             <div key={idx} className="text-center">

@@ -8,12 +8,12 @@ import { Check } from "lucide-react";
 
 const Join = () => {
   const benefits = [
-    "Access to exclusive member resources and publications",
-    "Invitations to international events and conferences",
-    "Networking opportunities with global professionals",
-    "Eligibility for awards and recognition programs",
-    "Voting rights in organizational decisions",
-    "Discounted rates for workshops and training",
+    "Akses ke sumber daya dan publikasi eksklusif anggota",
+    "Undangan ke acara dan konferensi internasional",
+    "Peluang jaringan dengan para profesional global",
+    "Kelayakan untuk program penghargaan dan pengakuan",
+    "Hak suara dalam pengambilan keputusan organisasi",
+    "Tarif diskon untuk lokakarya dan pelatihan",
   ];
 
   return (
@@ -22,16 +22,16 @@ const Join = () => {
 
       <div className="container mx-auto px-4 py-12">
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-4xl font-bold mb-4 text-center">Join FLY.ORG</h1>
+          <h1 className="text-4xl font-bold mb-4 text-center">Bergabung dengan FLY.ORG</h1>
           <p className="text-muted-foreground mb-12 text-lg text-center">
-            Become part of our global community
+            Jadilah bagian dari komunitas global kami
           </p>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
             {/* Benefits */}
             <Card>
               <CardHeader>
-                <CardTitle>Membership Benefits</CardTitle>
+                <CardTitle>Keuntungan Keanggotaan</CardTitle>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-3">
@@ -48,60 +48,60 @@ const Join = () => {
             {/* Registration Form */}
             <Card>
               <CardHeader>
-                <CardTitle>Register Now</CardTitle>
+                <CardTitle>Daftar Sekarang</CardTitle>
               </CardHeader>
               <CardContent>
                 <form className="space-y-4">
                   <div>
                     <label htmlFor="fullName" className="block text-sm font-medium mb-2">
-                      Full Name
+                      Nama Lengkap
                     </label>
                     <Input id="fullName" placeholder="John Doe" />
                   </div>
 
                   <div>
                     <label htmlFor="email" className="block text-sm font-medium mb-2">
-                      Email Address
+                      Alamat Email
                     </label>
                     <Input id="email" type="email" placeholder="john@example.com" />
                   </div>
 
                   <div>
                     <label htmlFor="country" className="block text-sm font-medium mb-2">
-                      Country
+                      Negara
                     </label>
                     <Select>
                       <SelectTrigger>
-                        <SelectValue placeholder="Select your country" />
+                        <SelectValue placeholder="Pilih negara Anda" />
                       </SelectTrigger>
                       <SelectContent>
-                        <SelectItem value="us">United States</SelectItem>
-                        <SelectItem value="uk">United Kingdom</SelectItem>
-                        <SelectItem value="ca">Canada</SelectItem>
+                        <SelectItem value="us">Amerika Serikat</SelectItem>
+                        <SelectItem value="uk">Inggris</SelectItem>
+                        <SelectItem value="ca">Kanada</SelectItem>
                         <SelectItem value="au">Australia</SelectItem>
-                        <SelectItem value="de">Germany</SelectItem>
-                        <SelectItem value="fr">France</SelectItem>
-                        <SelectItem value="other">Other</SelectItem>
+                        <SelectItem value="de">Jerman</SelectItem>
+                        <SelectItem value="fr">Prancis</SelectItem>
+                        <SelectItem value="other">Lainnya</SelectItem>
                       </SelectContent>
                     </Select>
                   </div>
 
                   <div>
                     <label htmlFor="password" className="block text-sm font-medium mb-2">
-                      Password
+                      Kata Sandi
                     </label>
-                    <Input id="password" type="password" placeholder="Create a password" />
+                    <Input id="password" type="password" placeholder="Buat kata sandi" />
                   </div>
 
                   <div>
                     <label htmlFor="confirmPassword" className="block text-sm font-medium mb-2">
-                      Confirm Password
+                      Konfirmasi Kata Sandi
                     </label>
-                    <Input id="confirmPassword" type="password" placeholder="Confirm your password" />
+                    <Input id="confirmPassword" type="password" placeholder="Konfirmasi kata sandi Anda" />
                   </div>
 
                   <Button type="submit" className="w-full">
-                    Create Account
+                    Buat Akun
                   </Button>
                 </form>
               </CardContent>
@@ -111,9 +111,9 @@ const Join = () => {
           {/* Additional Info */}
           <Card>
             <CardContent className="pt-6">
-              <h3 className="font-semibold mb-2">Questions about membership?</h3>
+              <h3 className="font-semibold mb-2">Ada pertanyaan tentang keanggotaan?</h3>
               <p className="text-sm text-muted-foreground mb-4">
-                Contact our membership team at membership@fly.org or call +1 (555) 123-4567 for assistance.
+                Hubungi tim keanggotaan kami di membership@fly.org atau telepon +1 (555) 123-4567 untuk bantuan.
               </p>
             </CardContent>
           </Card>

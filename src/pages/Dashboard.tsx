@@ -9,20 +9,20 @@ const Dashboard = () => {
   const memberInfo = {
     name: "John Doe",
     email: "john.doe@example.com",
-    country: "United States",
-    memberSince: "January 2023",
-    status: "Active",
+    country: "Amerika Serikat",
+    memberSince: "Januari 2023",
+    status: "Aktif",
   };
 
   const documents = [
-    { title: "Member Handbook 2024", date: "Jan 1, 2024", size: "2.5 MB" },
-    { title: "Annual Report 2023", date: "Dec 15, 2023", size: "5.1 MB" },
-    { title: "Guidelines & Resources", date: "Nov 20, 2023", size: "1.8 MB" },
+    { title: "Buku Panduan Anggota 2024", date: "1 Jan 2024", size: "2.5 MB" },
+    { title: "Laporan Tahunan 2023", date: "15 Des 2023", size: "5.1 MB" },
+    { title: "Panduan & Sumber Daya", date: "20 Nov 2023", size: "1.8 MB" },
   ];
 
   const upcomingEvents = [
-    { title: "Regional Workshop", date: "April 15, 2024", location: "Virtual" },
-    { title: "Annual General Meeting", date: "May 20, 2024", location: "Geneva" },
+    { title: "Lokakarya Regional", date: "15 April 2024", location: "Virtual" },
+    { title: "Rapat Umum Tahunan", date: "20 Mei 2024", location: "Jenewa" },
   ];
 
   return (
@@ -31,8 +31,8 @@ const Dashboard = () => {
 
       <div className="container mx-auto px-4 py-12">
         <div className="mb-8">
-          <h1 className="text-4xl font-bold mb-2">Member Dashboard</h1>
-          <p className="text-muted-foreground">Welcome back, {memberInfo.name}!</p>
+          <h1 className="text-4xl font-bold mb-2">Dasbor Anggota</h1>
+          <p className="text-muted-foreground">Selamat datang kembali, {memberInfo.name}!</p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
@@ -41,12 +41,12 @@ const Dashboard = () => {
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
                 <User className="h-5 w-5" />
-                Profile
+                Profil
               </CardTitle>
             </CardHeader>
             <CardContent className="space-y-3">
               <div>
-                <p className="text-sm text-muted-foreground">Name</p>
+                <p className="text-sm text-muted-foreground">Nama</p>
                 <p className="font-medium">{memberInfo.name}</p>
               </div>
               <div>
@@ -54,11 +54,11 @@ const Dashboard = () => {
                 <p className="font-medium">{memberInfo.email}</p>
               </div>
               <div>
-                <p className="text-sm text-muted-foreground">Country</p>
+                <p className="text-sm text-muted-foreground">Negara</p>
                 <p className="font-medium">{memberInfo.country}</p>
               </div>
               <div>
-                <p className="text-sm text-muted-foreground">Member Since</p>
+                <p className="text-sm text-muted-foreground">Anggota Sejak</p>
                 <p className="font-medium">{memberInfo.memberSince}</p>
               </div>
               <div>
@@ -66,7 +66,7 @@ const Dashboard = () => {
                 <Badge className="bg-accent">{memberInfo.status}</Badge>
               </div>
               <Button variant="outline" className="w-full mt-4">
-                Edit Profile
+                Ubah Profil
               </Button>
             </CardContent>
           </Card>
@@ -78,7 +78,7 @@ const Dashboard = () => {
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
                   <FileText className="h-5 w-5" />
-                  Exclusive Documents
+                  Dokumen Eksklusif
                 </CardTitle>
               </CardHeader>
               <CardContent>
@@ -108,7 +108,7 @@ const Dashboard = () => {
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
                   <Calendar className="h-5 w-5" />
-                  Your Upcoming Events
+                  Acara Anda yang Akan Datang
                 </CardTitle>
               </CardHeader>
               <CardContent>
@@ -125,7 +125,7 @@ const Dashboard = () => {
                     </div>
                   ))}
                   <Button variant="outline" className="w-full mt-4">
-                    View All Events
+                    Lihat Semua Acara
                   </Button>
                 </div>
               </CardContent>
@@ -134,14 +134,14 @@ const Dashboard = () => {
             {/* Quick Actions */}
             <Card>
               <CardHeader>
-                <CardTitle>Quick Actions</CardTitle>
+                <CardTitle>Tindakan Cepat</CardTitle>
               </CardHeader>
               <CardContent>
                 <div className="grid grid-cols-2 gap-3">
-                  <Button variant="outline">Update Profile</Button>
-                  <Button variant="outline">Change Password</Button>
-                  <Button variant="outline">View Directory</Button>
-                  <Button variant="outline">Contact Support</Button>
+                  <Button variant="outline">Perbarui Profil</Button>
+                  <Button variant="outline">Ganti Kata Sandi</Button>
+                  <Button variant="outline">Lihat Direktori</Button>
+                  <Button variant="outline">Hubungi Dukungan</Button>
                 </div>
               </CardContent>
             </Card>

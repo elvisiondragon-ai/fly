@@ -8,51 +8,51 @@ const News = () => {
   const allNews = [
     {
       id: "1",
-      title: "Global Competition Results Announced",
-      excerpt: "Winners from over 50 countries celebrate their achievements in this year's international competition.",
+      title: "Hasil Kompetisi Global Diumumkan",
+      excerpt: "Pemenang dari lebih 50 negara merayakan pencapaian mereka dalam kompetisi internasional tahun ini.",
       image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d",
-      category: "Competition",
-      date: "March 15, 2024",
+      category: "Kompetisi",
+      date: "15 Maret 2024",
     },
     {
       id: "2",
-      title: "New Partnership Initiative Launched",
-      excerpt: "Expanding our global reach with strategic partnerships across continents.",
+      title: "Inisiatif Kemitraan Baru Diluncurkan",
+      excerpt: "Memperluas jangkauan global kami dengan kemitraan strategis di seluruh benua.",
       image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b",
-      category: "Announcement",
-      date: "March 12, 2024",
+      category: "Pengumuman",
+      date: "12 Maret 2024",
     },
     {
       id: "3",
-      title: "Annual Conference Details Released",
-      excerpt: "Join us for our biggest gathering of the year with keynote speakers and workshops.",
+      title: "Detail Konferensi Tahunan Dirilis",
+      excerpt: "Bergabunglah dengan kami untuk pertemuan terbesar tahun ini dengan pembicara utama dan lokakarya.",
       image: "https://images.unsplash.com/photo-1649972904349-6e44c42644a7",
-      category: "Events",
-      date: "March 10, 2024",
+      category: "Acara",
+      date: "10 Maret 2024",
     },
     {
       id: "4",
-      title: "Member Spotlight: Innovation in Action",
-      excerpt: "Highlighting the exceptional work of our community members making a difference.",
+      title: "Sorotan Anggota: Inovasi dalam Aksi",
+      excerpt: "Menyoroti karya luar biasa dari anggota komunitas kami yang membuat perbedaan.",
       image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158",
-      category: "Members",
-      date: "March 8, 2024",
+      category: "Anggota",
+      date: "8 Maret 2024",
     },
     {
       id: "5",
-      title: "New Resources Available for Members",
-      excerpt: "Access exclusive guides, templates, and tools in the member dashboard.",
+      title: "Sumber Daya Baru Tersedia untuk Anggota",
+      excerpt: "Akses panduan, templat, dan alat eksklusif di dasbor anggota.",
       image: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97",
-      category: "Resources",
-      date: "March 5, 2024",
+      category: "Sumber Daya",
+      date: "5 Maret 2024",
     },
     {
       id: "6",
-      title: "Regional Meetup Success Stories",
-      excerpt: "Recap of recent regional gatherings and the connections made.",
+      title: "Kisah Sukses Pertemuan Regional",
+      excerpt: "Rekap pertemuan regional baru-baru ini dan koneksi yang terjalin.",
       image: "https://images.unsplash.com/photo-1507537297725-24a1c029d3ca",
-      category: "Community",
-      date: "March 1, 2024",
+      category: "Komunitas",
+      date: "1 Maret 2024",
     },
   ];
 
@@ -61,31 +61,31 @@ const News = () => {
       <Navbar />
 
       <div className="container mx-auto px-4 py-12">
-        <h1 className="text-4xl font-bold mb-8">News & Updates</h1>
+        <h1 className="text-4xl font-bold mb-8">Berita & Pembaruan</h1>
 
         {/* Filters */}
         <div className="flex flex-col sm:flex-row gap-4 mb-8">
           <Select>
             <SelectTrigger className="w-full sm:w-48">
-              <SelectValue placeholder="All Categories" />
+              <SelectValue placeholder="Semua Kategori" />
             </SelectTrigger>
             <SelectContent>
-              <SelectItem value="all">All Categories</SelectItem>
-              <SelectItem value="competition">Competition</SelectItem>
-              <SelectItem value="announcement">Announcement</SelectItem>
-              <SelectItem value="events">Events</SelectItem>
-              <SelectItem value="members">Members</SelectItem>
-              <SelectItem value="resources">Resources</SelectItem>
+              <SelectItem value="all">Semua Kategori</SelectItem>
+              <SelectItem value="competition">Kompetisi</SelectItem>
+              <SelectItem value="announcement">Pengumuman</SelectItem>
+              <SelectItem value="events">Acara</SelectItem>
+              <SelectItem value="members">Anggota</SelectItem>
+              <SelectItem value="resources">Sumber Daya</SelectItem>
             </SelectContent>
           </Select>
 
           <Select>
             <SelectTrigger className="w-full sm:w-48">
-              <SelectValue placeholder="Sort by Date" />
+              <SelectValue placeholder="Urutkan berdasarkan Tanggal" />
             </SelectTrigger>
             <SelectContent>
-              <SelectItem value="newest">Newest First</SelectItem>
-              <SelectItem value="oldest">Oldest First</SelectItem>
+              <SelectItem value="newest">Terbaru</SelectItem>
+              <SelectItem value="oldest">Terlama</SelectItem>
             </SelectContent>
           </Select>
         </div>
@@ -99,11 +99,11 @@ const News = () => {
 
         {/* Pagination */}
         <div className="flex justify-center gap-2">
-          <Button variant="outline">Previous</Button>
+          <Button variant="outline">Sebelumnya</Button>
           <Button>1</Button>
           <Button variant="outline">2</Button>
           <Button variant="outline">3</Button>
-          <Button variant="outline">Next</Button>
+          <Button variant="outline">Berikutnya</Button>
         </div>
       </div>
 

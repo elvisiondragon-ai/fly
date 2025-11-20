@@ -17,19 +17,19 @@ export const Navbar = () => {
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-6">
             <Link to="/" className="text-foreground hover:text-primary transition-colors">
-              Home
+              Beranda
             </Link>
             <Link to="/news" className="text-foreground hover:text-primary transition-colors">
-              News
+              Berita
             </Link>
             <Link to="/events" className="text-foreground hover:text-primary transition-colors">
-              Events
+              Acara
             </Link>
             <Link to="/about" className="text-foreground hover:text-primary transition-colors">
-              About
+              Tentang
             </Link>
             <Link to="/contact" className="text-foreground hover:text-primary transition-colors">
-              Contact
+              Kontak
             </Link>
           </div>
 
@@ -38,10 +38,10 @@ export const Navbar = () => {
               <Search className="h-5 w-5" />
             </Button>
             <Link to="/login">
-              <Button variant="outline">Login</Button>
+              <Button variant="outline">Masuk</Button>
             </Link>
             <Link to="/join">
-              <Button>Join Now</Button>
+              <Button>Gabung Sekarang</Button>
             </Link>
           </div>
 
@@ -59,26 +59,26 @@ export const Navbar = () => {
           <div className="md:hidden py-4 border-t border-border">
             <div className="flex flex-col gap-4">
               <Link to="/" className="text-foreground hover:text-primary transition-colors">
-                Home
+                Beranda
               </Link>
               <Link to="/news" className="text-foreground hover:text-primary transition-colors">
-                News
+                Berita
               </Link>
               <Link to="/events" className="text-foreground hover:text-primary transition-colors">
-                Events
+                Acara
               </Link>
               <Link to="/about" className="text-foreground hover:text-primary transition-colors">
-                About
+                Tentang
               </Link>
               <Link to="/contact" className="text-foreground hover:text-primary transition-colors">
-                Contact
+                Kontak
               </Link>
               <div className="flex gap-2 pt-2">
                 <Link to="/login" className="flex-1">
-                  <Button variant="outline" className="w-full">Login</Button>
+                  <Button variant="outline" className="w-full">Masuk</Button>
                 </Link>
                 <Link to="/join" className="flex-1">
-                  <Button className="w-full">Join Now</Button>
+                  <Button className="w-full">Gabung Sekarang</Button>
                 </Link>
               </div>
             </div>

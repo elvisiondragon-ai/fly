@@ -12,22 +12,22 @@ const NewsArticle = () => {
 
       <article className="container mx-auto px-4 py-12 max-w-4xl">
         <Link to="/news" className="text-primary hover:underline mb-4 inline-block">
-          ← Back to News
+          ← Kembali ke Berita
         </Link>
 
-        <Badge className="mb-4">Competition</Badge>
+        <Badge className="mb-4">Kompetisi</Badge>
 
         <h1 className="text-4xl md:text-5xl font-bold mb-4">
-          Global Competition Results Announced
+          Hasil Kompetisi Global Diumumkan
         </h1>
 
         <div className="flex items-center gap-4 text-muted-foreground mb-8">
           <div className="flex items-center">
             <Calendar className="h-4 w-4 mr-2" />
-            March 15, 2024
+            15 Maret 2024
           </div>
           <span>•</span>
-          <span>By Editorial Team</span>
+          <span>Oleh Tim Editorial</span>
         </div>
 
         <img
@@ -38,31 +38,31 @@ const NewsArticle = () => {
 
         <div className="prose prose-lg max-w-none">
           <p className="text-xl text-muted-foreground mb-6">
-            Winners from over 50 countries celebrate their achievements in this year's international competition, marking one of our most successful events to date.
+            Pemenang dari lebih 50 negara merayakan pencapaian mereka dalam kompetisi internasional tahun ini, menandai salah satu acara kami yang paling sukses hingga saat ini.
           </p>
 
           <p className="mb-4">
-            We are thrilled to announce the results of this year's global competition, which saw unprecedented participation from members across all continents. The competition showcased exceptional talent and innovation, with entries that pushed the boundaries of excellence in their respective categories.
+            Kami sangat gembira mengumumkan hasil kompetisi global tahun ini, yang diikuti oleh partisipasi luar biasa dari anggota di semua benua. Kompetisi ini menampilkan bakat dan inovasi yang luar biasa, dengan karya-karya yang mendorong batas keunggulan dalam kategori masing-masing.
           </p>
 
-          <h2 className="text-2xl font-bold mt-8 mb-4">Record-Breaking Participation</h2>
+          <h2 className="text-2xl font-bold mt-8 mb-4">Partisipasi yang Memecahkan Rekor</h2>
           <p className="mb-4">
-            This year's competition attracted over 5,000 entries from 50+ countries, representing a 40% increase from last year. The diversity of submissions reflected our organization's truly global reach and the dedication of our members to advancing their fields.
+            Kompetisi tahun ini menarik lebih dari 5.000 entri dari 50+ negara, mewakili peningkatan 40% dari tahun lalu. Keragaman kiriman mencerminkan jangkauan organisasi kami yang benar-benar global dan dedikasi anggota kami untuk memajukan bidang mereka.
           </p>
 
-          <h2 className="text-2xl font-bold mt-8 mb-4">Award Categories</h2>
+          <h2 className="text-2xl font-bold mt-8 mb-4">Kategori Penghargaan</h2>
           <p className="mb-4">
-            Winners were selected across multiple categories, including Innovation, Community Impact, Sustainability, and Youth Achievement. Each category was judged by an international panel of experts who evaluated entries based on creativity, execution, and potential for positive impact.
+            Pemenang dipilih di berbagai kategori, termasuk Inovasi, Dampak Komunitas, Keberlanjutan, dan Prestasi Pemuda. Setiap kategori dinilai oleh panel ahli internasional yang mengevaluasi entri berdasarkan kreativitas, eksekusi, dan potensi dampak positif.
           </p>
 
-          <h2 className="text-2xl font-bold mt-8 mb-4">Looking Ahead</h2>
+          <h2 className="text-2xl font-bold mt-8 mb-4">Melihat ke Depan</h2>
           <p className="mb-4">
-            As we celebrate this year's winners, we're already planning next year's competition. We encourage all members to start preparing their submissions and to reach out if they need guidance or resources. Together, we continue to raise the bar for excellence.
+            Saat kita merayakan para pemenang tahun ini, kami sudah merencanakan kompetisi tahun depan. Kami mendorong semua anggota untuk mulai mempersiapkan kiriman mereka dan untuk menghubungi jika mereka memerlukan bimbingan atau sumber daya. Bersama-sama, kita terus meningkatkan standar keunggulan.
           </p>
         </div>
 
         <div className="flex items-center gap-4 mt-12 pt-8 border-t border-border">
-          <span className="font-semibold">Share this article:</span>
+          <span className="font-semibold">Bagikan artikel ini:</span>
           <Button variant="outline" size="icon">
             <Facebook className="h-4 w-4" />
           </Button>

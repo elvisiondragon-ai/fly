@@ -10,43 +10,43 @@ const Home = () => {
   const featuredNews = [
     {
       id: "1",
-      title: "Global Competition Results Announced",
-      excerpt: "Winners from over 50 countries celebrate their achievements in this year's international competition.",
+      title: "Hasil Kompetisi Global Diumumkan",
+      excerpt: "Pemenang dari lebih 50 negara merayakan pencapaian mereka dalam kompetisi internasional tahun ini.",
       image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d",
-      category: "Competition",
-      date: "March 15, 2024",
+      category: "Kompetisi",
+      date: "15 Maret 2024",
       featured: true,
     },
     {
       id: "2",
-      title: "New Partnership Initiative Launched",
-      excerpt: "Expanding our global reach with strategic partnerships across continents.",
+      title: "Inisiatif Kemitraan Baru Diluncurkan",
+      excerpt: "Memperluas jangkauan global kami dengan kemitraan strategis di seluruh benua.",
       image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b",
-      category: "Announcement",
-      date: "March 12, 2024",
+      category: "Pengumuman",
+      date: "12 Maret 2024",
     },
     {
       id: "3",
-      title: "Annual Conference Details Released",
-      excerpt: "Join us for our biggest gathering of the year with keynote speakers and workshops.",
+      title: "Detail Konferensi Tahunan Dirilis",
+      excerpt: "Bergabunglah dengan kami untuk pertemuan terbesar tahun ini dengan pembicara utama dan lokakarya.",
       image: "https://images.unsplash.com/photo-1649972904349-6e44c42644a7",
-      category: "Events",
-      date: "March 10, 2024",
+      category: "Acara",
+      date: "10 Maret 2024",
     },
   ];
 
   const upcomingEvents = [
     {
-      title: "Regional Workshop Series",
-      date: "April 15-17, 2024",
-      location: "Virtual Event",
-      description: "Three-day intensive workshop covering best practices and innovations.",
+      title: "Seri Lokakarya Regional",
+      date: "15-17 April 2024",
+      location: "Acara Virtual",
+      description: "Lokakarya intensif tiga hari yang mencakup praktik terbaik dan inovasi.",
     },
     {
-      title: "Annual General Meeting",
-      date: "May 20, 2024",
-      location: "Geneva, Switzerland",
-      description: "Join members from around the world for our yearly gathering.",
+      title: "Rapat Umum Tahunan",
+      date: "20 Mei 2024",
+      location: "Jenewa, Swiss",
+      description: "Bergabunglah dengan anggota dari seluruh dunia untuk pertemuan tahunan kami.",
     },
   ];
 
@@ -64,14 +64,14 @@ const Home = () => {
         />
         <div className="relative z-10 text-center text-white container mx-auto px-4">
           <h1 className="text-5xl md:text-6xl font-bold mb-6">
-            Welcome to FLY.ORG
+            Selamat Datang di FLY.ORG
           </h1>
           <p className="text-xl md:text-2xl mb-8 max-w-2xl mx-auto">
-            Connecting global excellence and innovation across borders
+            Menghubungkan keunggulan dan inovasi global melintasi batas
           </p>
           <Link to="/join">
             <Button size="lg" variant="secondary" className="group">
-              Become a Member
+              Menjadi Anggota
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
             </Button>
           </Link>
@@ -81,9 +81,9 @@ const Home = () => {
       {/* Latest News */}
       <section className="container mx-auto px-4 py-16">
         <div className="flex items-center justify-between mb-8">
-          <h2 className="text-3xl font-bold">Latest News</h2>
+          <h2 className="text-3xl font-bold">Berita Terbaru</h2>
           <Link to="/news">
-            <Button variant="outline">View All</Button>
+            <Button variant="outline">Lihat Semua</Button>
           </Link>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -97,9 +97,9 @@ const Home = () => {
       <section className="bg-secondary py-16">
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between mb-8">
-            <h2 className="text-3xl font-bold">Upcoming Events</h2>
+            <h2 className="text-3xl font-bold">Acara Mendatang</h2>
             <Link to="/events">
-              <Button variant="outline">View Calendar</Button>
+              <Button variant="outline">Lihat Kalender</Button>
             </Link>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -113,13 +113,13 @@ const Home = () => {
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-r from-primary to-accent text-white">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-4xl font-bold mb-4">Join Our Global Community</h2>
+          <h2 className="text-4xl font-bold mb-4">Bergabunglah dengan Komunitas Global Kami</h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto">
-            Connect with professionals and enthusiasts from around the world
+            Terhubung dengan para profesional dan peminat dari seluruh dunia
           </p>
           <Link to="/join">
             <Button size="lg" variant="secondary">
-              Get Started Today
+              Mulai Hari Ini
             </Button>
           </Link>
         </div>
