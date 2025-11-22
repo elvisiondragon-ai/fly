@@ -1,24 +1,24 @@
 ---
 deployment:
   tasks:
-    # 1. Install all dependencies from package.json
+    # 1. Install semua dependency dari package.json
     - npm install
 
-    # 2. Build the project. Vite will create a "dist" folder
+    # 2. Build proyek. Vite akan membuat folder "dist"
     - npm run build
 
-    # IMPORTANT: The following tasks copy the built files to public_html/fly/
-    # For this to work, the domain's "Document Root" in cPanel MUST be set to "public_html/fly".
+    # 3. Hapus isi folder tujuan untuk memastikan kebersihan
+    - rm -rf /home1/elternit/public_html/fly/dist/*
 
-    # 3. Copy all files from the build output (dist) to the target folder
-    # Note the dot (.) at the end of dist/. to copy everything, including hidden files
-    - cp -R dist/. /home1/elternit/public_html/fly/
+    # 4. Salin semua file dari hasil build (dist) ke folder tujuan
+    #    Perhatikan tanda titik (.) di akhir dist/. untuk menyalin semua, termasuk file tersembunyi
+    - cp -R dist/. /home1/elternit/public_html/fly/dist/
 
-    # 4. Explicitly copy .htaccess to the target folder
-    - cp public/.htaccess /home1/elternit/public_html/fly/
+    # 5. Salin .htaccess secara eksplisit ke folder tujuan
+    - cp public/.htaccess /home1/elternit/public_html/fly/dist/
 
-    # 5. Set permissions for all directories
-    - find /home1/elternit/public_html/fly/ -type d -exec chmod 755 {} \;
+    # 6. Atur izin (permission) untuk semua direktori
+    - find /home1/elternit/public_html/fly/dist/ -type d -exec chmod 755 {} \;
 
-    # 6. Set permissions for all files
-    - find /home1/elternit/public_html/fly/ -type f -exec chmod 644 {} \;
+    # 7. Atur izin (permission) untuk semua file
+    - find /home1/elternit/public_html/fly/dist/ -type f -exec chmod 644 {} \;
