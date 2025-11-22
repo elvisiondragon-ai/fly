@@ -12,7 +12,6 @@ export default function Auth() {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const [confirmPassword, setConfirmPassword] = useState('')
-  const [negara, setNegara] = useState('')
   const navigate = useNavigate();
 
   const handleLogin = async (e: React.FormEvent) => {
@@ -38,7 +37,7 @@ export default function Auth() {
   const handleSignup = async (e: React.FormEvent) => {
     e.preventDefault()
     console.log('Signup form submitted');
-    console.log({ email, namaLengkap, negara });
+    console.log({ email });
 
     if (password !== confirmPassword) {
       toast.error("Passwords do not match");
